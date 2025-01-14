@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "question": "What does the HTML <a> tag do?",
+        "options": [
+            "Defines a hyperlink",
+            "Defines a paragraph",
+            "Defines an image",
+            "Defines a division"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 2,
+        "question": "Which of the following is the correct way to link an external CSS file to an HTML document?",
+        "options": [
+            "<link href='styles.css'>",
+            "<link rel='stylesheet' type='text/css' href='styles.css'>",
+            "<style src='styles.css'>",
+            "<css src='styles.css'>"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 3,
+        "question": "Which property is used to change the background color in CSS?",
+        "options": [
+            "color",
+            "background-color",
+            "bg-color",
+            "background"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 4,
+        "question": "In JavaScript, which of the following is used to declare a variable?",
+        "options": [
+            "let",
+            "variable",
+            "var",
+            "both let and var"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "id": 5,
+        "question": "Which of the following is the correct syntax for a comment in JavaScript?",
+        "options": [
+            "// This is a comment",
+            "<!-- This is a comment -->",
+            "/* This is a comment */",
+            "/* This is a comment"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 6,
+        "question": "What does CSS stand for?",
+        "options": [
+            "Cascading Style Sheets",
+            "Computer Style Sheets",
+            "Creative Style Sheets",
+            "Colorful Style Sheets"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 7,
+        "question": "Which HTML element is used to define a list of items in an ordered list?",
+        "options": [
+            "<ol>",
+            "<ul>",
+            "<li>",
+            "<dl>"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 8,
+        "question": "Which JavaScript method is used to write a message to the console?",
+        "options": [
+            "console.print()",
+            "console.log()",
+            "console.write()",
+            "log.console()"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 9,
+        "question": "How can you make a list item clickable in HTML?",
+        "options": [
+            "Wrap it in a <div> tag",
+            "Wrap it in an <a> tag",
+            "Add a class 'clickable'",
+            "Wrap it in a <button> tag"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 10,
+        "question": "What does the 'box-sizing' property do in CSS?",
+        "options": [
+            "It changes the box model calculations",
+            "It defines the width and height of elements",
+            "It defines the padding inside the box",
+            "It changes the border color"
+        ],
+        "correctOptionIndex": 0
+    }
+]

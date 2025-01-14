@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "question": "Choose the correct form of the verb: I _____ to the store every day.",
+        "options": [
+            "go",
+            "going",
+            "gone",
+            "will go"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 2,
+        "question": "Which word is the synonym of 'happy'?",
+        "options": [
+            "sad",
+            "joyful",
+            "angry",
+            "tired"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 3,
+        "question": "Choose the correct word: The cat is _____ the table.",
+        "options": [
+            "on",
+            "in",
+            "under",
+            "at"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 4,
+        "question": "Which sentence is grammatically correct?",
+        "options": [
+            "She can sings very well.",
+            "She sings very well.",
+            "She very well sings.",
+            "She sing very well."
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 5,
+        "question": "Which of the following is an adjective?",
+        "options": [
+            "quickly",
+            "running",
+            "beautiful",
+            "played"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "id": 6,
+        "question": "Choose the correct form: They _____ a lot of books.",
+        "options": [
+            "has",
+            "have",
+            "having",
+            "had"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 7,
+        "question": "Fill in the blank: I have _____ friends in the class.",
+        "options": [
+            "few",
+            "a few",
+            "little",
+            "much"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 8,
+        "question": "Which word is an antonym of 'rich'?",
+        "options": [
+            "wealthy",
+            "poor",
+            "strong",
+            "kind"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 9,
+        "question": "What does the phrase 'break a leg' mean?",
+        "options": [
+            "To hurt yourself",
+            "To wish someone good luck",
+            "To fail",
+            "To fight"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 10,
+        "question": "Choose the correct sentence.",
+        "options": [
+            "I is going to the park.",
+            "She are going to the park.",
+            "They are going to the park.",
+            "He going to the park."
+        ],
+        "correctOptionIndex": 2
+    }
+]

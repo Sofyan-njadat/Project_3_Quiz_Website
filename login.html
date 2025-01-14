@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="/images/logo2.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css3/animate.css">
+    
+    <link rel="stylesheet" href="css3/owl.carousel.min.css">
+    <link rel="stylesheet" href="css3/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css3/magnific-popup.css">
+
+    <link rel="stylesheet" href="css3/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css3/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css3/flaticon.css">
+    <link rel="stylesheet" href="css3/style.css">
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            /* background-image: url('/images/login_image.png'); Replace with the actual background image */
+            background: linear-gradient(40deg,#C2FAF1,#295E6A);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: -8px;
+        }
+        form {
+            background-color:white;
+            padding: 1vw;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 40vw;
+            height: 20vw;
+        }
+        form input[type="text"],
+        form input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #loginForm h2{
+            color: #295E6A;
+        }
+        form a {
+            /* display: block; */
+            margin: 10px 0;
+            color: #295e6a;
+            text-decoration: none;
+            font-size: 0.9vw;
+        }
+        form a:hover {
+            text-decoration: underline;
+        }
+
+        form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #295e6a;
+            color: white;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #295e6a;
+        }
+        @media (max-width :500px) {
+            form{
+                width: 80vw;
+                height: 70vw;
+            }
+            form input{
+
+            }
+            form a{
+                font-size: 2.5vw;
+            }
+        }
+        #ftco-navbar{
+            background-color: #295E6A !important;
+        }
+        #footer1{
+            text-decoration: none !important;
+        }
+    </style>
+    
+        <!-- Bootstrap CSS Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+  
+
+    <div class="body">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <input type="text" id="email" placeholder="Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <!-- <a>Did you forget your password? Yes, </a>
+            <a href="reset.html"> click here</a><br> -->
+            <a>If you don't have an account click here to </a>
+            <a href="register.html">Create Account</a><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // Get email and password values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Retrieve user data from local storage
+            const user = JSON.parse(localStorage.getItem('user'));
+
+            // Check if user exists and password matches
+            if (user && user.email === email && user.password === password) {
+                window.location.href = "index.html";
+
+                // alert(`You are registered as ${user.firstName} ${user.lastName}`);
+
+            } else {
+                alert('Invalid email or password!');
+            }
+
+            // Clear the form
+            document.getElementById('loginForm').reset();
+        });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="javascript/disable.js"></script>
+
+        <script>
+          document.getElementById('logout-btn').addEventListener("click", logoutFunction);
+      
+      function logoutFunction() {
+        localStorage.removeItem('user');
+      }
+        </script>
+        <script src="js3/jquery.min.js"></script>
+        <script src="js3/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js3/popper.min.js"></script>
+        <script src="js3/bootstrap.min.js"></script>
+        <script src="js3/jquery.easing.1.3.js"></script>
+        <script src="js3/jquery.waypoints.min.js"></script>
+        <script src="js3/jquery.stellar.min.js"></script>
+        <script src="js3/owl.carousel.min.js"></script>
+        <script src="js3/jquery.magnific-popup.min.js"></script>
+        <script src="js3/jquery.animateNumber.min.js"></script>
+        <script src="js3/bootstrap-datepicker.js"></script>
+        <script src="js3/scrollax.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <script src="js3/google-map.js"></script>
+        <script src="js3/main.js"></script>
+
+</body>
+</html>

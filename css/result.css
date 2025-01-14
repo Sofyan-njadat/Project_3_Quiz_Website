@@ -1,0 +1,143 @@
+body {
+    background-color: #D0E8E4;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+}
+
+.logo img {
+    position: absolute;
+    height: 45px;
+    top: 2vh;
+    left: 1.5vw;
+}
+
+#alldiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#finish {
+    background-color: #fff;
+    padding: 2vw 2vw;
+    border-radius: 20px;
+    margin: 15vw 15vw 0vw 15vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    color: #295e6a;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
+}
+
+#btn-seeResult {
+    background-color: #295e6a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    animation: slideDown 1s ease-out;
+}
+
+#btn-GoToHome {
+    background-color: #295e6a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    animation: slideDown 1s ease-out;
+}
+
+#btn-downloadResult {
+    color: #295e6a;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#btn-backToTests {
+    color: #295e6a;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#btn-GoToHome:hover {
+    background-color: #4A4A4A;
+    color: #C2FAF1;
+    font-size: 1.1rem;
+}
+
+#btn-seeResult:hover {
+    background-color: #4A4A4A;
+    color: #C2FAF1;
+    font-size: 1.1rem;
+}
+
+#btn-backToTests:hover {
+    color: #4A4A4A;
+    font-size: 1.1rem;
+}
+
+#btn-downloadResult:hover {
+    color: #4A4A4A;
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+#container {
+    display: none;
+    margin: 5vw 15vw;
+    background-color: #fff;
+    padding: 2vw 2vw;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+
+}

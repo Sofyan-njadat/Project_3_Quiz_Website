@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Serif+Text:ital@0;1&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stick+No+Bills:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D0E8E4;
+}
+
+.logo img {
+    position: absolute;
+    height: 45px;
+    top: 2vh;
+    left: 1.5vw;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #00000040;
+    max-width: 900px;
+    margin: 10vh auto;
+    margin-bottom: 2vh;
+    text-align: center;
+    padding: 20px 90px;
+}
+
+.container #testType {
+    font-weight: 600;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 4px 4px #00000040;
+    color: #295E6A;
+}
+
+.questions {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.questions #questionNumber {
+    font-size: 18px;
+    text-shadow: 0px 4px 4px #00000040;
+    color: #888;
+    margin: 10px 0px 20px 0px;
+}
+
+.questions #question {
+    font-size: 22px;
+    margin-top: -4px;
+    text-shadow: 0px 4px 4px #00000040;
+    color: #4a4a4a;
+}
+
+.timer {
+    /* margin-top: -150px; */
+    /* position: absolute; */
+    /* text-align: right; */
+    /* top: 120px; */
+    /* right: 320px; */
+    /* left: 80vw; */
+    margin-left: 50vw;
+
+    margin-top: -4vw;
+    padding-bottom: 0px;
+    /* margin-top: 0px; */
+    font-size: 20px;
+    color: #888;
+    text-shadow: 0px 2px 2px #00000040;
+}
+
+.timer #icon {
+    font-size: 23px;
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+.timer #TimeLeft {
+    font-size: 13px;
+    position: relative;
+    top: -7px;
+    left: 35px;
+}
+
+.answers {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.answers .answer-option {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    border: 2px solid #295E6A;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+    box-shadow: 0px 4px 4px #00000040;
+    padding: 15px;
+
+}
+
+.answers .answer-option.selected {
+    background-color: #295E6A;
+    color: white;
+}
+
+.answers .answer-option:hover {
+    background-color: #295E6A;
+    color: white;
+    box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+}
+
+.next-btn {
+    margin: 25px 0px;
+}
+
+.next-btn button {
+    width: 140px;
+    height: 45px;
+    background-color: #295E6A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    text-shadow: 2px 2px 2px #00000040;
+    box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+}
+
+.next-btn button:hover {
+    background-color: #153a43;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        height: 40px;
+    }
+    .container {
+        margin: 13vh 5vw 2vh 5vw;
+        padding: 25px;
+    }
+    
+    .container #testType {
+        font-size: 28px;
+    }
+    
+    /* .questions{
+        margin-top: -35px;
+    } */
+
+    .questions #questionNumber {
+        font-size: 16px;
+        margin: 10px 0px 15px 0px;
+    }
+    
+    .questions #question {
+        font-size: 18px;
+        margin-bottom: -10px;
+    }
+    
+    .timer {
+        font-size: 16px;
+        margin-top: -20vw;
+
+        /* margin-top: -50px; */
+
+    }
+    
+    .timer #icon {
+        font-size: 20px;
+    }
+    
+    .timer #TimeLeft {
+        font-size: 10px;
+    }
+}
+
+
+/* مظهر صندوق التنبيه */
+.error-popup {
+    position: absolute;
+    background-color: #fff;
+    color: #e63946;
+    border: 1px solid #e63946;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    display: none; /* مخفي افتراضيًا */
+    z-index: 1000;
+}
+
+/* السهم الصغير */
+.error-popup::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #e63946;
+}
+
+

@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "question": "If all roses are flowers, and some flowers fade quickly, can it be concluded that some roses fade quickly?",
+        "options": [
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if roses are the type of flower that fades quickly"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "id": 2,
+        "question": "What number comes next in the series? 1, 4, 9, 16, 25, ?",
+        "options": [
+            "30",
+            "36",
+            "40",
+            "32"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 3,
+        "question": "If a train travels 60 miles in one hour, how far will it travel in 5 hours?",
+        "options": [
+            "300 miles",
+            "240 miles",
+            "350 miles",
+            "120 miles"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 4,
+        "question": "If you rearrange the letters of the word 'CINEMA', you will get the name of which of the following?",
+        "options": [
+            "MENACE",
+            "MAYBE",
+            "A MINCE",
+            "ICEMAN"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "id": 5,
+        "question": "Which number logically replaces the question mark? 2, 6, 12, 20, ?",
+        "options": [
+            "24",
+            "28",
+            "30",
+            "32"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 6,
+        "question": "Which number should come next in the series: 2, 4, 8, 16, ?",
+        "options": [
+            "32",
+            "24",
+            "18",
+            "20"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 7,
+        "question": "Which of the following figures is different from the others?",
+        "options": [
+            "Circle",
+            "Square",
+            "Rectangle",
+            "Triangle"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "id": 8,
+        "question": "What comes next in the sequence? 1, 2, 4, 8, 16, ?",
+        "options": [
+            "24",
+            "32",
+            "48",
+            "64"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 9,
+        "question": "If all squares are rectangles, and all rectangles are shapes, can it be concluded that all squares are shapes?",
+        "options": [
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if the squares are equal"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 10,
+        "question": "What comes next in the pattern? O, T, T, F, F, ?",
+        "options": [
+            "S",
+            "E",
+            "T",
+            "N"
+        ],
+        "correctOptionIndex": 0
+    }
+]

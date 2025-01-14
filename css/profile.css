@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D0E8E4 !important;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.edit-btn {
+    background-color: #295E6A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #D0E8E4;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-item2{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.profile-value {
+    font-size: 1.1em;
+    color: #555;
+    position: absolute;
+    left: 40vw;
+}
+
+#profile-image {
+    /* border-radius: 50%; */
+    position: absolute;
+    left: 40vw;
+    top: 14vw;
+}
+@media (max-width:500px) {
+    #profile-image {
+        /* border-radius: 50%; */
+        position: absolute;
+        left: 40vw;
+        top: 74vw;
+    }
+}
+
+.edit-profile-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.3s ease;
+}
+
+.edit-profile-modal.modal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    height: 80%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.reset-password-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reset-password-btn:hover {
+    background-color: #d32f2f;
+}
+
+.reset-password-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.3s ease;
+}
+
+.reset-password-modal.modal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 30%;
+    background-color: #295E6A;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D0E8E4;
+}
+
+@media only screen and (max-width: 425px) {
+    .profile-container {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .profile-header h1 {
+        font-size: 1.5em;
+    }
+
+    .edit-btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .profile-label, .profile-value {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .modal-content {
+        padding: 30px;
+        width: 171%;
+        max-width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    
+    }
+
+    .modal-content h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    #close-modal {
+        font-size: 30px;
+        color: #333;
+        top: 10px;
+        right: 10px;
+    }
+}
