@@ -2,7 +2,7 @@
 
 
 # GitHub Link:
-https://github.com/Mona-Tamimi/Project-3-JS
+https://github.com/Sofyan-njadat/Project-3-JS
 
 # Figma Link:
 https://www.figma.com/design/CxfsuMbQpN46twYJduX3Ga/project-3?node-id=0-1&t=sWXSCCth6mE6Rzpa-1
